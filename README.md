@@ -25,7 +25,7 @@ Webアプリケーション開発を中心に学びながら、身近な業務�
 - **Web**：Python / Flask、SQLite、HTML / CSS / JavaScript、Chart.js
 - **Bot・自動化・運用**：discord.py、Playwright、Oracle Cloud、Linux / systemd、pytest
 - **VR・デバイス連携**：Unity / C#、Meta Quest 3、ESP32、WebSocket / TCP
-- **開発**：Git / GitHub、SourceTree
+- **開発**：Git / GitHub、GitHub Actions、SourceTree
 
 ## Projects
 
@@ -48,10 +48,12 @@ Webアプリケーション開発を中心に学びながら、身近な業務�
 
 成績HTMLを手動で貼り付け、単位・GPA/GPSを整理・可視化するFlask製の非公式個人開発アプリです。  
 ユーザー登録・ログイン、ユーザーごとのデータ分離、成績表HTMLの解析、GPAと取得単位のグラフ表示を実装しています。  
-成績情報や個人情報を扱うため、ローカル環境での利用を想定しています。
+実際の成績はローカル環境で扱う想定で、公開デモはサンプルデータで確認できます。
+
+- 他のユーザーのデータを見たり変更したりできないことを、自動テストとGitHub Actionsで確認
 
 - [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri)
-- デモ：[seiseki-kanri.onrender.com](https://seiseki-kanri.onrender.com)（サンプルデータで確認できます。初回表示に時間がかかる場合があります）
+- デモ：[seiseki-kanri.onrender.com](https://seiseki-kanri.onrender.com)（無料枠のため、初回表示に1分ほどかかる場合があります）
 
 ### VR Glider Simulator
 
