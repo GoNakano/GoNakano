@@ -37,11 +37,12 @@ Webアプリケーション開発を中心に学びながら、身近な業務�
 - 入退室管理システムのCSV出力操作をPlaywrightで自動化し、10分ごとに最新データを取得
 - 取得したCSVの形式を検証してから差し替え、取得に失敗しても前回の正常なデータで応答
 - Oracle Cloud Always Free上でsystemdにより常時稼働し、更新が止まると管理者にDMで通知
+- 生徒情報を扱うため、許可したサーバーと管理者本人のDM以外からのコマンドを拒否
 
-最初の版は外部APIを利用していましたが、入退室管理システムの変更でAPIが使えなくなったため、CSV取得方式に作り直しました。  
-現在運用している後継版のソースコードは非公開で、公開しているのは旧API版です。
+最初の版は外部APIを利用していましたが、入退室管理システムの変更でAPIが使えなくなったため、CSV取得方式に作り直しました。
 
-- [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot)（旧API版）
+- [takeda-log-discord-bot](https://github.com/GoNakano/takeda-log-discord-bot)（現在運用している版）
+- [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot)（外部APIを使っていた旧版）
 
 ### Student Grade Management App
 
@@ -49,7 +50,7 @@ Webアプリケーション開発を中心に学びながら、身近な業務�
 ユーザー登録・ログイン、ユーザーごとのデータ分離、成績表HTMLの解析、GPAと取得単位のグラフ表示を実装しています。  
 成績情報や個人情報を扱うため、ローカル環境での利用を想定しています。
 
-- [seiseki-kanri-public](https://github.com/GoNakano/seiseki-kanri-public)
+- [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri)
 - デモ：[seiseki-kanri.onrender.com](https://seiseki-kanri.onrender.com)（サンプルデータで確認できます。初回表示に時間がかかる場合があります）
 
 ### VR Glider Simulator
