@@ -7,6 +7,7 @@
 
 - 塾の入退室記録をDiscordから確認できるBotを作り、2026年7月から塾で使われています
 - 研究室のチーム開発で、体感型VRグライダーシミュレータの制作に参加しました
+- 海外インターン（インド・Sasken Technologies）で、車載向けの前方衝突警告を評価ボードで動かすチーム開発に参加しました
 - HTML / CSS / JavaScript とWebの仕組みを書籍で学習中です
 - AtCoderでPythonを使って問題を解いています
 
@@ -15,6 +16,7 @@
 - **Python**：AtCoder
 - **Bot・運用**：Discord Bot、Playwright、Oracle Cloud、Linux / systemd（AIを使って構築し、運用しています）
 - **VR・デバイス**：Unity、Meta Quest 3、ESP32（研究室のチーム開発）
+- **組み込み**：TI TDA4VM評価ボード、TI Processor SDK、Ubuntu（海外インターン）
 - **開発**：Git / GitHub、SourceTree
 - **学習中**：HTML / CSS / JavaScript
 
@@ -50,6 +52,20 @@ IMUセンサーによる姿勢入力、Unity、Meta Quest 3、ESP32との通信�
 ※研究室のPrivateプロジェクトのため、ソースコードは公開していません。
 
 - [vr-glider-project-summary](https://github.com/GoNakano/vr-glider-project-summary)
+
+### Forward Collision Warning on an Embedded Board（海外インターン）
+
+立命館大学の海外インターンシップで、インド・ベンガルールのSasken Technologiesに約4週間参加しました（2026年8〜9月）。  
+学生5名のチームで、走行映像から前方の車両を検出して衝突までの時間を推定し、警告を出すシステムを、Pythonで試作してからCに移し、TI TDA4VMの評価ボード上で動かしました。
+
+自分が担当したこと
+
+- ボード用SDKのセットアップ、Ubuntuでのビルド、評価ボードでの実行と動作確認
+- メンバーのブランチの統合（Git）
+- 動画入力と警告処理（C）の、ボードの物体検出アプリへの統合。コードの編集には生成AIを使い、ビルドと実機での確認は自分で行いました
+- 英語での成果発表（評価ボードのセットアップ、個人の貢献、まとめを担当）
+
+- [sasken-fcw-internship-summary](https://github.com/GoNakano/sasken-fcw-internship-summary)
 
 ### Student Grade Management App
 
