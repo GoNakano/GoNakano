@@ -13,12 +13,22 @@
 - HTML / CSS / JavaScript とWebの仕組みを書籍で学習中です
 - AtCoderでPythonを使って問題を解いています
 
+## リポジトリ一覧
+
+| リポジトリ | 内容 | 自分の担当と生成AIの担当 |
+|---|---|---|
+| [takeda-log-discord-bot](https://github.com/GoNakano/takeda-log-discord-bot) | 塾の入退室ログをDiscordで確認するBot（現在運用している版）。旧版は [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot) | 自分：課題の発見と機能の決定、サーバーの用意、日々の運用、不具合の切り分けと動作確認。AI：コードの実装、テスト、導入スクリプト |
+| [vr-glider-project-summary](https://github.com/GoNakano/vr-glider-project-summary) | 研究室のチーム開発で作った体感型VRグライダーの概要（コードは非公開） | 自分：メインゲームシーンの組み込みと調整、実機での試験、Gitでの統合。AI：メインゲームシーンのC#コードの生成 |
+| [sasken-fcw-internship-summary](https://github.com/GoNakano/sasken-fcw-internship-summary) | 海外インターン（Sasken Technologies）の概要 | 下の「Forward Collision Warning on an Embedded Board」を参照 |
+| [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri) | 大学の成績を登録してGPA/GPSを確認するFlaskアプリ | 生成AIを使って作成（2026年9月のコード整理と自動テストの追加を含む） |
+
 ## 使ったことのある技術
 
 - **Python**：AtCoder
 - **Bot・運用**：Discord Bot、Playwright、Oracle Cloud、Linux / systemd（AIを使って構築し、運用しています）
 - **VR・デバイス**：Unity、Meta Quest 3、ESP32（研究室のチーム開発）
 - **組み込み**：TI TDA4VM評価ボード、TI Processor SDK、Ubuntu（海外インターン）
+- **Webアプリ**：Flask、SQLite（AIを使って作成した成績管理アプリ）
 - **開発**：Git / GitHub、SourceTree
 - **学習中**：HTML / CSS / JavaScript
 
@@ -34,7 +44,8 @@
 - 入退室の確認に手間がかかっている課題を見つけ、必要な機能（生徒名で検索して直近1週間の記録を見る）を決めた
 - サーバーの用意、再ログインなどの日々の運用、不具合の原因の切り分けと動作確認
 
-実装はAIを使って行いました。管理画面のCSV出力をPlaywrightで自動取得し、Oracle Cloud Always Free上で常時稼働しています。
+実装はAIを使って行いました。管理画面のCSV出力をPlaywrightで自動取得し、Oracle Cloud Always Free上で常時稼働しています。  
+取得したCSVは形式を検証してから差し替えるため、取得に失敗しても前回の正常なデータで応答を続けます。CSVの更新が止まった場合は、管理者のDMにだけ通知します。
 
 - [takeda-log-discord-bot](https://github.com/GoNakano/takeda-log-discord-bot)（現在運用している版）
 - [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot)（外部APIを使っていた旧版）
@@ -71,7 +82,8 @@ IMUセンサーによる姿勢入力、Unity、Meta Quest 3、ESP32との通信�
 
 ### Student Grade Management App
 
-FlaskとSQLiteで作った、非公式の成績管理Webアプリです。AIを使って作成しました。
+FlaskとSQLiteで作った、非公式の成績管理Webアプリです。AIを使って作成しました。2026年9月のコード整理と自動テストの追加も、生成AI（Claude Code）で行っています。  
+科目を登録してGPA/GPSや取得単位を確認でき、大学ポータルからコピーした成績表のHTMLを解析して一括登録できます。成績の取得・更新・削除はログイン中のユーザーのデータだけを対象にし、GitHub Actionsでpushのたびにテストを実行しています。
 
 - [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri)
 - デモ：[seiseki-kanri.onrender.com](https://seiseki-kanri.onrender.com)（無料枠のため、初回表示に1分ほどかかる場合があります）
