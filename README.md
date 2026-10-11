@@ -19,7 +19,7 @@
 |---|---|---|
 | [takeda-log-discord-bot](https://github.com/GoNakano/takeda-log-discord-bot) | 塾の入退室ログをDiscordで確認するBot（現在運用している版）。旧版は [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot) | 自分：課題の発見と機能の決定、サーバーの用意、日々の運用、不具合の切り分けと動作確認。AI：コードの実装、テスト、導入スクリプト |
 | [vr-glider-project-summary](https://github.com/GoNakano/vr-glider-project-summary) | 研究室のチーム開発で作った体感型VRグライダーの概要（コードは非公開） | 自分：メインゲームシーンの組み込みと調整、実機での試験、Gitでの統合。AI：メインゲームシーンのC#コードの生成 |
-| [sasken-fcw-internship-summary](https://github.com/GoNakano/sasken-fcw-internship-summary) | 海外インターンで作った前方衝突警告システムの概要 | 自分：SDKのセットアップとビルド、評価ボードでの確認、ボードのアプリへの統合、英語での発表。AI：コードの編集 |
+| [sasken-fcw-internship-summary](https://github.com/GoNakano/sasken-fcw-internship-summary) | 海外インターン（Sasken Technologies）の概要 | 下の「Forward Collision Warning on an Embedded Board」を参照 |
 | [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri) | 大学の成績を登録してGPA/GPSを確認するFlaskアプリ | 生成AIを使って作成（2026年9月のコード整理と自動テストの追加を含む） |
 
 ## 使ったことのある技術
