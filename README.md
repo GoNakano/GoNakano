@@ -2,88 +2,21 @@
 
 🌐 **Portfolio:** [gonakano.com](https://gonakano.com)
 
-立命館大学 情報理工学部 実世界情報コースのB4です。  
-実装にはAI（Claude Code・Codex）を使い、自分は課題の整理・要件決め・動作確認・運用を担当しています。Web開発は現在学習中です。
+立命館大学 情報理工学部 実世界情報コースのB4です。足の動きで画面を操作する方法を研究しています。制作では、身体で操縦するVRグライダーをチームで開発しました。
 
-## About Me
+## 制作・開発経験
 
-- 塾の入退室記録をDiscordから確認できるBotを作り、2026年7月から塾で使われています
-- 研究室のチーム開発で、体感型VRグライダーシミュレータの制作に参加しました
-- 海外インターン（インド・Sasken Technologies）で、車載向けの前方衝突警告を評価ボードで動かすチーム開発に参加しました
-- HTML / CSS / JavaScript とWebの仕組みを書籍で学習中です
-- AtCoderでPythonを使って問題を解いています
+### [ジュベナイルフライト（VRグライダー）](https://github.com/GoNakano/vr-glider-project-summary)
 
-## リポジトリ一覧
+身体を傾けてグライダーを操縦するVR作品です。研究室のチーム開発で制作しました。メインゲームシーンのUnityへの組み込みと調整、チームの変更の統合、Quest 3での実機試験を担当しました。
 
-| リポジトリ | 内容 | 自分の担当と生成AIの担当 |
-|---|---|---|
-| [takeda-log-discord-bot](https://github.com/GoNakano/takeda-log-discord-bot) | 塾の入退室ログをDiscordで確認するBot（現在運用している版）。旧版は [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot) | 自分：課題の発見と機能の決定、サーバーの用意、日々の運用、不具合の切り分けと動作確認。AI：コードの実装、テスト、導入スクリプト |
-| [vr-glider-project-summary](https://github.com/GoNakano/vr-glider-project-summary) | 研究室のチーム開発で作った体感型VRグライダーの概要（コードは非公開） | 自分：メインゲームシーンの組み込みと調整、実機での試験、Gitでの統合。AI：メインゲームシーンのC#コードの生成 |
-| [sasken-fcw-internship-summary](https://github.com/GoNakano/sasken-fcw-internship-summary) | 海外インターン（Sasken Technologies）の概要 | 下の「Forward Collision Warning on an Embedded Board」を参照 |
-| [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri) | 大学の成績を登録してGPA/GPSを確認するFlaskアプリ | 生成AIを使って作成（2026年9月のコード整理と自動テストの追加を含む） |
+- 紹介ページ：[gonakano.com/projects/vr-glider/](https://gonakano.com/projects/vr-glider/)
+- 研究室のPrivateプロジェクトのため、ソースコードは公開していません。
 
-## 使ったことのある技術
+### [前方衝突警告 · 海外インターン](https://github.com/GoNakano/sasken-fcw-internship-summary)
 
-- **Python**：AtCoder
-- **Bot・運用**：Discord Bot、Playwright、Oracle Cloud、Linux / systemd（AIを使って構築し、運用しています）
-- **VR・デバイス**：Unity、Meta Quest 3、ESP32（研究室のチーム開発）
-- **組み込み**：TI TDA4VM評価ボード、TI Processor SDK、Ubuntu（海外インターン）
-- **Webアプリ**：Flask、SQLite（AIを使って作成した成績管理アプリ）
-- **開発**：Git / GitHub、SourceTree
-- **学習中**：HTML / CSS / JavaScript
+Sasken Technologies（インド・ベンガルール）のインターンで、前方の車両を検出して警告を出すシステムをTI TDA4VM評価ボードで動かすチーム開発に参加しました。SDKのセットアップ、機能の統合、評価ボードでの実行と動作確認を担当しました。
 
-## Projects
+## 使った技術・開発ツール
 
-### Discord Bot for Attendance Management
-
-塾の入退室ログを、普段使っているDiscordのスラッシュコマンドから確認できるBotです。  
-生徒ごとの直近1週間の入退室時刻と滞在時間を表示します。2026年7月29日から塾のDiscordサーバーで稼働しています。
-
-自分が担当したこと
-
-- 入退室の確認に手間がかかっている課題を見つけ、必要な機能（生徒名で検索して直近1週間の記録を見る）を決めた
-- サーバーの用意、再ログインなどの日々の運用、不具合の原因の切り分けと動作確認
-
-実装はAIを使って行いました。管理画面のCSV出力をPlaywrightで自動取得し、Oracle Cloud Always Free上で常時稼働しています。  
-取得したCSVは形式を検証してから差し替えるため、取得に失敗しても前回の正常なデータで応答を続けます。CSVの更新が止まった場合は、管理者のDMにだけ通知します。
-
-- [takeda-log-discord-bot](https://github.com/GoNakano/takeda-log-discord-bot)（現在運用している版）
-- [nyutai-discord-bot](https://github.com/GoNakano/nyutai-discord-bot)（外部APIを使っていた旧版）
-
-### VR Glider Simulator
-
-研究室のチーム開発で、身体の傾きで操作する体感型VRグライダーシミュレータを制作しました。  
-IMUセンサーによる姿勢入力、Unity、Meta Quest 3、ESP32との通信を組み合わせたシステムです。
-
-自分が担当したこと
-
-- メインゲームシーンの進行（カウントダウン、リング・チェックポイント・ゴールの判定、リザルト、サウンドなど）の作成と調整。C#のコードはAIで生成し、Unity上で組み込んで調整しました
-- 子供向けモードなど、体験者に合わせた難易度や進行の調整
-- Gitでのブランチ統合と、チームへのSourceTreeの使い方の共有
-- Quest 3・センサー・ESP32をつないだ実機での試験と不具合対応
-
-※研究室のPrivateプロジェクトのため、ソースコードは公開していません。
-
-- [vr-glider-project-summary](https://github.com/GoNakano/vr-glider-project-summary)
-
-### Forward Collision Warning on an Embedded Board（海外インターン）
-
-立命館大学の海外インターンシップで、インド・ベンガルールのSasken Technologiesに約4週間参加しました（2026年8〜9月）。  
-学生5名のチームで、走行映像から前方の車両を検出して衝突までの時間を推定し、警告を出すシステムを、Pythonで試作してからCに移し、TI TDA4VMの評価ボード上で動かしました。
-
-自分が担当したこと
-
-- ボード用SDKのセットアップ、Ubuntuでのビルド、評価ボードでの実行と動作確認
-- メンバーのブランチの統合（Git）
-- 動画入力と警告処理（C）の、ボードの物体検出アプリへの統合。コードの編集には生成AIを使い、ビルドと実機での確認は自分で行いました
-- 英語での成果発表（評価ボードのセットアップ、個人の貢献、まとめを担当）
-
-- [sasken-fcw-internship-summary](https://github.com/GoNakano/sasken-fcw-internship-summary)
-
-### Student Grade Management App
-
-FlaskとSQLiteで作った、非公式の成績管理Webアプリです。AIを使って作成しました。2026年9月のコード整理と自動テストの追加も、生成AI（Claude Code）で行っています。  
-科目を登録してGPA/GPSや取得単位を確認でき、大学ポータルからコピーした成績表のHTMLを解析して一括登録できます。成績の取得・更新・削除はログイン中のユーザーのデータだけを対象にし、GitHub Actionsでpushのたびにテストを実行しています。
-
-- [seiseki-kanri](https://github.com/GoNakano/seiseki-kanri)
-- デモ：[seiseki-kanri.onrender.com](https://seiseki-kanri.onrender.com)（無料枠のため、初回表示に1分ほどかかる場合があります）
+Unity、Meta Quest 3、ESP32、TI TDA4VM、Python、C、Git / GitHub、SourceTree、Claude Code、Codex。HTML / CSS / JavaScriptは学習中です。
